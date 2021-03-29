@@ -1,0 +1,11 @@
+//Objective-C, a class is itself an object with an opaque type called Class.
+//anything inside header is public;
+//- before emthod means isntanced method , + means classMethod
+//prefix class name with something so that class names will be unique NS and UI are reserved for use by apple
+//id means some special kind of object
+XYZObject *object = [XYZObject new];
+    // is effectively the same as:
+    XYZObject *object = [[XYZObject alloc] init];//alloc allocate memroy and clear and init sets to initial properties
+Remember even classes are objects of opaque typ called Class.
+
+@synthesize propertyName=instanceVarName; implies the content of property will be stored in instacVar synthesized;by default _propertyName is instance var of propery
